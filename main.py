@@ -1,6 +1,4 @@
-from urllib import request
-from fastapi import FastAPI, Form, Request, Response
-from fastapi.responses import PlainTextResponse,  HTMLResponse
+from fastapi import FastAPI,Request
 from fastapi.templating import Jinja2Templates
 from controllers.text_tarefas import TextController
 from datetime import date
@@ -9,6 +7,7 @@ dia = date.today()
 app = FastAPI()
 templates = Jinja2Templates(directory="views")
 text_controller = TextController(path=f'./bd/situacao_{dia}.txt')
+
 @app.post('/')
 async def save_text(request: Request):
     form = await request.form()
