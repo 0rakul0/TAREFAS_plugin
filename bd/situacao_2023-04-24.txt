@@ -1,0 +1,10 @@
+Tarefas:
+  - Os diários estão atualizados? Sim
+  - Os scripts estão parados? Não
+Texto: teste de pag
+
+Tarefas:
+  - Os diários estão atualizados? Sim
+  - Os scripts estão parados? Sim
+Texto: teste de render index
+
